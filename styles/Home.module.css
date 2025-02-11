@@ -1,6 +1,6 @@
 .container {
   padding: 0 2rem;
-  background: linear-gradient(to right, purple, cyan);
+  background: linear-gradient(to right, purple, cyan), black; /* Add black background */
   min-height: 100vh; /* Ensure it covers the full viewport height */
   color: white; /* Set font color to white */
   display: flex;
