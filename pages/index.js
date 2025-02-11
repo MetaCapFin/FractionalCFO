@@ -12,7 +12,7 @@ export default function Home() {
 
       <header className={styles.header}>
         <div className={styles.logo}>LOGO HERE</div>
-        <h1>FRACTIONAL CFO by XYZ</h1>
+        <h1 className={styles.title}>FRACTIONAL CFO by XYZ</h1>
       </header>
 
       <main className={styles.main}>
