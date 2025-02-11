@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center; /* Center the header horizontally */
-  padding-top: 100px; /* Add padding from the top */
+  padding-top: 50px; /* Add padding from the top */
   margin-bottom: 2px; /* Lower the header by 2 points */
   width: 100%; /* Ensure the header takes full width */
   position: relative; /* Position relative for absolute positioning of logo */
@@ -30,7 +30,7 @@
 .title {
   margin: 0;
   font-size: 2rem;
-  margin-bottom: 2px; /* Add spacing below the title */
+  margin-bottom: 4px; /* Add spacing below the title */
   flex-grow: 1; /* Allow title to take remaining space */
 }
 
