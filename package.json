@@ -1,36 +1,14 @@
-.container {
-  padding: 0 2rem;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-  border-bottom: 1px solid #eaeaea;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.title {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.main {
-  padding: 2rem 0;
-}
-
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .title {
-    font-size: 1.5rem;
+{
+  "name": "fractional-cfo",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   }
 }
