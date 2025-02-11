@@ -3,6 +3,11 @@
   background: linear-gradient(to right, purple, cyan);
   min-height: 100vh; /* Ensure it covers the full viewport height */
   color: white; /* Set font color to white */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text */
 }
 
 .header {
@@ -10,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  /* Remove the border line */
+  margin-bottom: 8px; /* Lower the header by 4 more points (total 8px) */
 }
 
 .logo {
