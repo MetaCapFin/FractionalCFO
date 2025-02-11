@@ -15,19 +15,23 @@
   justify-content: center; /* Center the header horizontally */
   padding-top: 50px; /* Add padding from the top */
   margin-bottom: 2px; /* Lower the header by 2 points */
+  width: 100%; /* Ensure the header takes full width */
+  position: relative; /* Position relative for absolute positioning of logo */
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 2px; /* Add spacing below the logo */
-  align-self: flex-start; /* Align logo to the left */
+  position: absolute;
+  left: 50px; /* Padding of 50px from the left margin */
 }
 
 .title {
   margin: 0;
   font-size: 2rem;
   margin-bottom: 2px; /* Add spacing below the title */
+  flex-grow: 1; /* Allow title to take remaining space */
 }
 
 .main {
@@ -42,5 +46,10 @@
 
   .title {
     font-size: 1.5rem;
+  }
+
+  .logo {
+    position: static; /* Reset position for mobile view */
+    margin-bottom: 4px; /* Adjust spacing for mobile view */
   }
 }
