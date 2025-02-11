@@ -7,20 +7,40 @@
   flex-direction: column;
   align-items: center; /* Center content horizontally */
   text-align: center; /* Center text */
-  position: relative; /* Position relative for pseudo-element */
+  position: relative; /* Position relative for pseudo-elements */
 }
 
-.container::before {
+.container::before,
+.container::after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none; /* Ensure it doesn't interfere with other elements */
+}
+
+.container::before {
   background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px);
   background-size: 20px 20px;
   opacity: 0.5;
-  pointer-events: none; /* Ensure it doesn't interfere with other elements */
+}
+
+.container::after {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 2px, transparent 2px);
+  background-size: 40px 40px;
+  opacity: 0.3;
+  animation: moveDots 10s linear infinite;
+}
+
+@keyframes moveDots {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-10px, -10px);
+  }
 }
 
 .header {
