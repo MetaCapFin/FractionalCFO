@@ -10,18 +10,6 @@
   position: relative; /* Position relative for pseudo-elements */
 }
 
-.container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('/path-to-your-constellations-image.png') repeat; /* Replace with your constellations image */
-  opacity: 0.5;
-  pointer-events: none; /* Ensure it doesn't interfere with other elements */
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -52,6 +40,20 @@
   padding: 2rem 0;
 }
 
+.rectContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px; /* Padding from the text */
+  width: 100%;
+}
+
+.rectangle {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  width: 22%;
+  height: 150px;
+  margin: 0 1%;
+}
+
 @media (max-width: 600px) {
   .header {
     flex-direction: column;
@@ -66,5 +68,15 @@
   .logo {
     position: static; /* Reset position for mobile view */
     margin-bottom: 4px; /* Adjust spacing for mobile view */
+  }
+
+  .rectContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rectangle {
+    width: 80%;
+    margin: 10px 0;
   }
 }
