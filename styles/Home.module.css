@@ -30,7 +30,8 @@
 .title {
   margin: 0;
   font-size: 2rem;
-  margin-bottom: 4px; /* Add spacing below the title */
+  margin-bottom: 2px; /* Add spacing below the title */
+  padding-top: 70px; /* Add padding from the top margin */
   flex-grow: 1; /* Allow title to take remaining space */
 }
 
@@ -46,6 +47,7 @@
 
   .title {
     font-size: 1.5rem;
+    padding-top: 0; /* Remove padding for mobile view */
   }
 
   .logo {
