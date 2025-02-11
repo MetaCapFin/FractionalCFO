@@ -44,14 +44,15 @@
   display: flex;
   justify-content: space-between;
   padding-top: 50px; /* Padding from the text */
-  width: 100%;
+  width: calc(100% - 200px); /* Adjust width to account for 100px padding on each side */
+  padding: 0 100px; /* Add 100px padding from the border */
 }
 
 .rectangle {
   background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%); /* Radial gradient */
-  width: 44%; /* Twice the original width */
+  width: calc(50% - 10px); /* Twice the original width minus half of the 20px padding */
   height: 400px; /* Twice the original height */
-  margin: 0 1%;
+  margin: 0 10px; /* 20px padding between each container */
   border-radius: 15px; /* Curved corners */
   border: 2px solid white; /* Defined border */
 }
@@ -75,6 +76,8 @@
   .rectContainer {
     flex-direction: column;
     align-items: center;
+    width: 100%; /* Reset width for mobile view */
+    padding: 0; /* Remove padding for mobile view */
   }
 
   .rectangle {
