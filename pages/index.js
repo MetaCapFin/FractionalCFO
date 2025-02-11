@@ -17,6 +17,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <p>Welcome to our Fractional CFO service tailored for contractors.</p>
+        <div className={styles.rectContainer}>
+          <div className={styles.rectangle}></div>
+          <div className={styles.rectangle}></div>
+          <div className={styles.rectangle}></div>
+          <div className={styles.rectangle}></div>
+        </div>
       </main>
     </div>
   );
