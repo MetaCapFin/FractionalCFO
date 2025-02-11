@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  background: linear-gradient(to right, purple, teal);
+  min-height: 100vh; /* Ensure it covers the full viewport height */
 }
 
 .header {
