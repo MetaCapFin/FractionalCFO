@@ -5,7 +5,6 @@
   color: white; /* Set font color to white */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
   align-items: center; /* Center content horizontally */
   text-align: center; /* Center text */
 }
@@ -13,8 +12,8 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the header */
-  padding: 1rem 0;
+  justify-content: center; /* Center the header horizontally */
+  padding-top: 50px; /* Add padding from the top */
   margin-bottom: 2px; /* Lower the header by 2 points */
 }
 
@@ -44,4 +43,5 @@
   .title {
     font-size: 1.5rem;
   }
+}
 }
