@@ -1,6 +1,6 @@
 .container {
   padding: 0 2rem;
-  background: linear-gradient(to right, purple, cyan), black; /* Add black background */
+  background: linear-gradient(to right, rgba(128, 0, 128, 0.7), rgba(0, 255, 255, 0.7)), black; /* Semi-translucent gradient over black background */
   min-height: 100vh; /* Ensure it covers the full viewport height */
   color: white; /* Set font color to white */
   display: flex;
