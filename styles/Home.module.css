@@ -26,13 +26,13 @@
     z-index: 1000;
 }
 
-nav a {
+.nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
 }
 
-nav a:hover {
+.nav a:hover {
     text-decoration: underline;
 }
 
