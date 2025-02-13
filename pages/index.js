@@ -15,6 +15,12 @@ export default function Home() {
         <h1 className={styles.title}>FRACTIONAL CFO by XYZ</h1>
       </header>
 
+      <nav className={styles.nav}>
+        <a href="#about-us">About Us</a>
+        <a href="#fractional-cfo-services">Fractional CFO Services</a>
+        <a href="#media">Media</a>
+      </nav>
+
       <main className={styles.main}>
         <p>Welcome to our Fractional CFO service tailored for contractors.</p>
         <div className={styles.rectContainer}>
